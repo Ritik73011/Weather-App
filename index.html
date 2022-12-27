@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="flex">
+        <input type="text" id="search" placeholder="Enter city name" required />
+        <button id="submit">Search</button>
+      </div>
+
+      <div id="forecast"></div>
+    </div>
+
+    <div id="weatherData">
+      <div id="weather">
+        <img
+          src="https://cdn.svgator.com/images/2022/01/funny-404-error-page-design.gif"
+          id="gif"
+        />
+        <div id="contain">
+          <h2 id="date">Aug 4, 11:51am</h2>
+          <h1 id="city">Gaya</h1>
+          <div id="tempDiv">
+            <img src="#" alt="" id="icon" />
+            <h1 id="temp">22C</h1>
+          </div>
+
+          <h3 id="feel">Feel Likes 23C. Scattered Clouds. Gentle Breeze</h3>
+
+          <div id="other">
+            <div id="line"></div>
+            <div class="subDetail">
+              <div id="min">
+                <p id="minTemp">Min Temp</p>
+                <p id="maxTemp">Max Temp</p>
+              </div>
+              <div id="sun">
+                <p id="sunRise">Sun Rise</p>
+                <p id="sunSet">Sun Set</p>
+              </div>
+
+              <div id="humidity">
+                <p id="h">humidity</p>
+                <p id="p">pressure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="map">
+        <!--Map Start-->
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=&t=&z=9&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+        </div>
+        <!--Map End-->
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>
